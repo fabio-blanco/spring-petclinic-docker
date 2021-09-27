@@ -1,16 +1,28 @@
-# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=main)](https://travis-ci.org/spring-projects/spring-petclinic/)
+# Docker and Github modified Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=main)](https://travis-ci.org/spring-projects/spring-petclinic/)
 
 ## Notice
 
 **This sample is not the original one from Spring, it may have modifications. I'm using 
 it to test docker and github Actions CI/CD configurations.**
 
+The original project can be found [here](https://github.com/spring-projects/spring-petclinic).
+
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
 ## Running petclinic locally
-Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a jar file and run it from the command line:
+Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/).
+To run with docker, from the command line do this:
 
+```shell
+git clone https://github.com/fabio-blanco/spring-petclinic-docker
+cd spring-petclinic-docker
+docker-compose -f docker-compose.dev.yml up --build
+```
+
+If you want to know more, go to [docker java tutorial](https://docs.docker.com/language/java/develop/).
+
+To run without docker You can build a jar file and run it from the command line:
 
 ```
 git clone https://github.com/spring-projects/spring-petclinic.git
